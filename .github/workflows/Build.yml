@@ -9,6 +9,7 @@ on:
   push:
     branches:
       - main
+      - build_folder_name_run_name
     paths-ignore:
       - '.github/**'
   # Triggers the workflow on push or pull request events but only for the main branch
@@ -52,7 +53,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4.4.0
       with:
         branch: deploy/${{ github.ref_name }}/Build
-        folder: build
+        folder: unity
   
 
     # Output
