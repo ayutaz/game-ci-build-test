@@ -45,6 +45,7 @@ jobs:
       with:
         unityVersion: ${{ matrix.unityVersion }}
         targetPlatform: ${{ matrix.targetPlatform }}
+        buildsPath: unity/${{ github.ref_name }}
         
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.4.0
