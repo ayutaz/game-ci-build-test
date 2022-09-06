@@ -49,7 +49,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.4.0
       with:
-        branch: gh-pages
+        branch: deploy/${{ github.ref_name }}
         folder: build
   
 
